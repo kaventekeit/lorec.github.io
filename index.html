@@ -5,39 +5,49 @@
   <body>
     <style>
     </style>
-    <p>[ originally published 3.11.2024 ]</p>
-    <h3>Common Crawley</h3>
-      <p>The Internet Archive was DDOSed on the 8th, and for reasons I don't understand, hasn't been able to "archive" since. Wikipedia refers to a "November 2013 crawl" for Common Crawl; I'm not sure if IA would ordinarily have done anything for the rest of this month.</p>
-      <p>Wikipedia:</p>
-      <p>\> Crawls [for the Wayback Machine] are contributed from various sources, some imported from third parties and others generated internally by the Archive. For example, crawls are contributed by the <a href='https://en.wikipedia.org/wiki/Alfred_P._Sloan_Foundation'>Sloan Foundation</a> and <a href='https://en.wikipedia.org/wiki/Alexa_Internet'>Alexa</a>, crawls run by Internet Archive on behalf of <a href='https://en.wikipedia.org/wiki/National_Archives_and_Records_Administration'>NARA</a> and the <a href='https://en.wikipedia.org/wiki/Internet_Memory_Foundation'>Internet Memory Foundation</a>, mirrors of <a href='https://en.wikipedia.org/wiki/Common_Crawl'>Common Crawl.</a></p>
-      <p>\> Amazon Web Services began hosting Common Crawl's archive through its Public Data Sets program in 2012. […] In 2013, Common Crawl began using the Apache Software Foundation‘s Nutch webcrawler instead of a custom crawler.</p>
-      <p>What is web crawling?</p>
-      <p>
-        Recently a smart acquaintance on Discord referred to the majority of what Google does with websites as “indexing”, in the context that using Google as Tumblr search doesn’t work because Google doesn’t “index” most Tumblr posts. I didn’t understand what that meant
-      </p>
-      <p>
-\> Keywords? How would that help make them more searchable? I would imagine it would be something like, just scrapping all the chaff and putting the “raw” text in a tree with numbered nodes
-      </p>
-      <p>
-until I read [Wikipedia]:
-      </p> 
-      <p>
-\> A Web crawler, sometimes called a spider or spiderbot and often shortened to crawler, is an Internet bot that systematically browses the World Wide Web and that is typically operated by search engines for the purpose of Web indexing (web spidering).
-      </p>
-      <p>
-Web indexing, or Internet indexing, comprises methods for indexing the contents of a website or of the Internet as a whole.
-      </p>
-      <p>
-and then a lightbulb turned on. “The Internet” is a territory, not a map, and not a territory that’s automatically Seen Like A State, to the point where it would basically have a natural map. Explainers usually go way harder on the “Pony Express” framing of Internet “addresses”, than the “series of tubes” framing, I realized, just because most readers will experience the superficial resonance of understanding at that point, and not because it’s actually very accurate at all. “The Internet” is as distributed as crypto. More so. [It has to be, for crypto to work – although the Internet’s distributedness isn’t, like Bitcoin’s distributedness, deliberately there to make subversion difficult – it’s just distributed because that makes such a large-scale routing system logistically possible, and this happens to be lucky for Bitcoin].
-      </p>
-      <p>
-Because the Internet has no natural map, mapping the Internet is a complicated technical problem with internal tradeoffs where I expect, even after years of Google doing this, the good idioms for many reasonable purposes are not, actually, Known.
-      </p>
-      <p>
-And we leave it to Google, Amazon, and what is apparently known to Wikipedia as more or less Peter Norvig’s Common Crawl.
-      </p>
-      <p>
-Here is the source code for Marginalia Search: <a href='https://github.com/MarginaliaSearch/MarginaliaSearch/tree/master'>https://github.com/MarginaliaSearch/MarginaliaSearch/tree/master</a> It includes a crawler that runs on cache miss of existing crawl data. I have no idea how it can be so small.
-      </p>
+    <div id='posts-container'>
+      <div class='post'>
+        <p>[ originally published 4 November 2024 ]</p>
+        <h3>Common Crawley 2: The Missing Link</h3>
+        <p>Here's [if I understand correctly] "how it can be so small" [from <a href='https://www.marginalia.nu/log'>@MarginaliaNu's blog]</a>:</p>
+        <img src='https://ibb.co/TH0ZjBx' />
+      </div>
+      <div class='post'>
+        <p>[ originally published 3 November 2024 ]</p>
+        <h3>Common Crawley</h3>
+          <p>The Internet Archive was DDOSed on the 8th, and for reasons I don't understand, hasn't been able to "archive" since. Wikipedia refers to a "November 2013 crawl" for Common Crawl; I'm not sure if IA would ordinarily have done anything for the rest of this month.</p>
+          <p>Wikipedia:</p>
+          <p>\> Crawls [for the Wayback Machine] are contributed from various sources, some imported from third parties and others generated internally by the Archive. For example, crawls are contributed by the <a href='https://en.wikipedia.org/wiki/Alfred_P._Sloan_Foundation'>Sloan Foundation</a> and <a href='https://en.wikipedia.org/wiki/Alexa_Internet'>Alexa</a>, crawls run by Internet Archive on behalf of <a href='https://en.wikipedia.org/wiki/National_Archives_and_Records_Administration'>NARA</a> and the <a href='https://en.wikipedia.org/wiki/Internet_Memory_Foundation'>Internet Memory Foundation</a>, mirrors of <a href='https://en.wikipedia.org/wiki/Common_Crawl'>Common Crawl.</a></p>
+          <p>\> Amazon Web Services began hosting Common Crawl's archive through its Public Data Sets program in 2012. […] In 2013, Common Crawl began using the Apache Software Foundation‘s Nutch webcrawler instead of a custom crawler.</p>
+          <p>What is web crawling?</p>
+          <p>
+            Recently a smart acquaintance on Discord referred to the majority of what Google does with websites as “indexing”, in the context that using Google as Tumblr search doesn’t work because Google doesn’t “index” most Tumblr posts. I didn’t understand what that meant
+          </p>
+          <p>
+\>     Keywords? How would that help make them more searchable? I would imagine it would be something like, just scrapping all the chaff and putting the “raw” text in a tree with numbered nodes
+          </p>
+          <p>
+unt    il I read [Wikipedia]:
+          </p> 
+          <p>
+\>     A Web crawler, sometimes called a spider or spiderbot and often shortened to crawler, is an Internet bot that systematically browses the World Wide Web and that is typically operated by search engines for the purpose of Web indexing (web spidering).
+          </p>
+          <p>
+Web     indexing, or Internet indexing, comprises methods for indexing the contents of a website or of the Internet as a whole.
+          </p>
+          <p>
+and     then a lightbulb turned on. “The Internet” is a territory, not a map, and not a territory that’s automatically Seen Like A State, to the point where it would basically have a natural map. Explainers usually go way harder on the “Pony Express” framing of Internet “addresses”, than the “series of tubes” framing, I realized, just because most readers will experience the superficial resonance of understanding at that point, and not because it’s actually very accurate at all. “The Internet” is as distributed as crypto. More so. [It has to be, for crypto to work – although the Internet’s distributedness isn’t, like Bitcoin’s distributedness, deliberately there to make subversion difficult – it’s just distributed because that makes such a large-scale routing system logistically possible, and this happens to be lucky for Bitcoin].
+          </p>
+          <p>
+Bec    ause the Internet has no natural map, mapping the Internet is a complicated technical problem with internal tradeoffs where I expect, even after years of Google doing this, the good idioms for many reasonable purposes are not, actually, Known.
+          </p>
+          <p>
+And     we leave it to Google, Amazon, and what is apparently known to Wikipedia as more or less Peter Norvig’s Common Crawl.
+          </p>
+          <p>
+Her    e is the source code for Marginalia Search: <a href='https://github.com/MarginaliaSearch/MarginaliaSearch/tree/master'>https://github.com/MarginaliaSearch/MarginaliaSearch/tree/master</a> It includes a crawler that runs on cache miss of existing crawl data. I have no idea how it can be so small.
+          </p>
+        </div>
+      </div>
   </body>
 </html>
