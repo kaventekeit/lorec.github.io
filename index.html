@@ -4,16 +4,89 @@
   </head>
   <body>
     <style>
+      body {
+        background-color: lightblue;
+      }
+      .post {
+        border-radius: 10px;
+        border: 1px solid darkblue;
+        margin: 3%;
+        padding: 3%;
+        background-color: white;
+      }
     </style>
     <div id='posts-container'>
-      <div class='post'>
+      <div class='post'
+           id='.2'>
+        <p>[ originally published 8 December 2024 ]</p>
+        <h3>.2</h3>
+        <p>Q: You have a Scheme. Practice that first.</p>
+        <p>A: Oh, a real Scheme? One with an asymmetric-lambda reducer? And sensible vector operations?</p>
+        <p>Q: If you want JavaScript</p>
+        <p>A: *shoots you*</p>
+      </div>
+      <div class='post'
+           id='.'>
+        <p>[ originally published 8 December 2024 ]</p>
+        <h3>.</h3>
+        <p>
+No getting around it. I have to write a Lisp. The question is, can I do it without writing any C or NASM? My answer to this question has always been both “Well, I’m not going to write C or NASM for a damn Lisp, that defeats the whole point” and “there’s no way I’m going to be able to get away with hacking a Lisp machine together out of – oh, it looks like Intel just fired their CEO – well, out of . . . David Zinsner’s and Michelle Johnston Holthaus’s [can you imagine if they’d appointed two male co-CEOs or a single female CEO? that’d have been gay! . . . this is how you can tell Intel is a dead player] – scraps”. Stack understanding only gets you so far when the stack is actually 500 physical guys physically in Taiwan, right? You’re not Blaise Pascal any more than you’re Warren Buffet. “Well, I don’t know, Will.” Pascal had a geniusproof hyperstition, too. But you’re right, I’m not Blaise Pascal.
+        </p>
+      </div>
+      <div class='post'
+           id='x'>
+        <p>[ originally published 6 December 2024</p>
+        <h3>x</h3>
+        <p>What do you know?</p><p>As soon as I look for the lights in th East, they are there.</p><p>Humans have seemingly infinite capacity for chauvinism.</p><p>Well, lights in the East,</p><p>I'm sorry I waited in the darkness, trusting when they told me it's all there is.</p><p>Shows I'm not really any better than the rest of them.</p><p>Rise, my lights in the East. Show me you're worthy, and I'll show you I know what to make of you. Never mind my patriarchal line of descent.</p><p>They would have had you dead, my trampling red-bearded fools.</p><p>They need you.</p>
+      </div>
+      <div class='post'
+           id='short-aoc-1.1'>
+        <p>[ originally published 3 December 2024 ]</p>
+        <h3>Short AoC 1.1</h3>
+        <p>
+The <a href='adventofcode.com/2024'>AoC problems</a> are great but too wordy. As a public service, I’ll be publishing short versions of this year’s problems, until I get bored with that.
+        </p>
+        <p>
+Day 1: Historian Hysteria – pt 1
+        </p>
+        <p>
+You need to find a traveling historian. Your clue is, he’s touring locations that are historically significant to the North Pole. As each location is checked for the historian, you’ll mark it on your list with a star. There are fifty locations you need to check, and twenty-five puzzles [ so don’t expect to find anything in the first 49 locations, it doesn’t matter, you’re essentially just going sightseeing ].
+        </p>
+        <p>
+First you need the list of locations. You have a document with the locations the historian planned to visit, listed not by name but by a unique number called the location ID. To make sure they don’t miss anything, the checkers split up into two groups, each searching the office and trying to complete their own list of location IDs. There’s just one problem: by holding the the two lists up side by side [your puzzle input], it quickly becomes clear the lists aren’t very similar.
+        </p>
+        <img src="https://i.ibb.co/SwLxBDb/pic1.png">
+        <p>
+Maybe the lists are only off by a small amount! To find out, pair up the numbers and measure how far apart they are. Pair up the smallest number in the left list with the smallest number in the right list, then the second-smallest left number with the second-smallest right number, and so on.
+Within each pair, figure out how far apart the two numbers are; you’ll need to add up all of those distances.
+        </p>
+        <p>
+          What is the "total distance" between your lists?
+        </p>
+        
+      </div>
+      <div class='post'
+           id='common-crawley-pt-2-the-missing-link'>
         <p>[ originally published 4 November 2024 ]</p>
         <h3>Common Crawley 2: The Missing Link</h3>
         <p>Here's [if I understand correctly] "how it can be so small" [from <a href='https://www.marginalia.nu/log'>@MarginaliaNu's blog]</a>:</p>
-        <img src='https://ibb.co/64t29R7/pic1.webp' />
+        <img src="https://i.ibb.co/64t29R7/pic1.webp">
         <img src="https://i.ibb.co/jwwqxPD/pic2.webp">
+        <img src="https://i.ibb.co/tM7t9Tt/pic3.webp">
+        <img src="https://i.ibb.co/gMj6Mq6/pic4.webp">
+        <p>
+          Remember, <a href='https://github.com/MarginaliaSearch/MarginaliaSearch/tree/master/code/processes/crawling-process'>the new Marginalia crawler</a> <a href='https://kaventekeit.github.io/lorec.github.io#common-crawley'>only runs</a> on cache miss [the term “cache miss” is usually used to refer to a CPU cache, but there’s nothing relevantly different about higher-level processes, except that they usually aren’t that cache-bottlenecked].
+        </p>
+        <img src="https://i.ibb.co/my82RBW/pic5.webp">
+        <p>
+<i>[ ^ take this to mean it will only generate new data if old data is absent – and there is a lot of old data ^ ]</i>
+        </p>
+        <p>
+So it doesn’t have to do as much as a “totipotent” web crawler. But it’s also not totipotent. It has assumptions baked in about the way the Web is laid out, assumptions that are already rotting into obsolescence.
+        </p>
+        <p>We can do better.</p>
       </div>
-      <div class='post'>
+      <div class='post' id='common-crawley'>
         <p>[ originally published 3 November 2024 ]</p>
         <h3>Common Crawley</h3>
           <p>The Internet Archive was DDOSed on the 8th, and for reasons I don't understand, hasn't been able to "archive" since. Wikipedia refers to a "November 2013 crawl" for Common Crawl; I'm not sure if IA would ordinarily have done anything for the rest of this month.</p>
